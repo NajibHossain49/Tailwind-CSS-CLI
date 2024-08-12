@@ -1,0 +1,250 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e7eb;
+    color: #111827;
+    background-color: #1a0c14;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-image: linear-gradient(to right top, #294369, #004d68, #005355, #115539, #42531f);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    color: #ffffff;
+    /* Set text color to white for better contrast */
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    /* Ensure main heading text is white */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    /* Make step headings white for contrast */
+    position: relative;
+    display: inline-block;
+}
+
+.step p {
+    margin: 0 0 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f3f4f6;
+    /* Lighten paragraph text to enhance visibility */
+}
+
+ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #ffffff33;
+    /* Semi-transparent white for list item background */
+    border-left: 4px solid #ffffff;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    /* Ensure list item text is white */
+}
+
+li:hover {
+    background-image: linear-gradient(to right top, #1a0c14, #33182e, #49234e, #583376, #5a48a3, #4d59b6, #376ac8, #007bd7, #0082c5, #0085ac, #118492, #48817e);
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    padding: 4px 6px;
+    border-radius: 6px;
+    color: coral;
+    /* Bright coral for code text to stand out */
+    font-size: 105%;
+    /* Increase font size for better readability */
+    font-weight: bold;
+    /* Make the code text bold */
+}
+
+pre {
+    background-color: #ffffff33;
+    /* Semi-transparent white for preformatted text background */
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    color: #fffb00;
+    /* Bright yellow for preformatted text */
+    font-size: 105%;
+    /* Increase font size for better readability */
+    font-weight: bold;
+    /* Make the preformatted text bold */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.note,
+.warning {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e11d48;
+    /* Red text color */
+}
+
+.note {
+    background-color: #ffd4d4;
+    /* Light yellow background for notes */
+    border-left: 4px solid #e11d48;
+    /* Red border for notes */
+}
+
+.warning {
+    background-color: #fffbcc;
+    /* Light red background for warnings */
+    border-left: 4px solid #e11d48;
+    /* Red border for warnings */
+}
+
+.warning-note {
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: darkviolet;
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 105%;
+    /* Increase font size slightly */
+    font-style: oblique;
+}
+
+a {
+    color: darkviolet;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(151, 30, 202);
+}
+
+
+.highlight {
+    font-style: oblique;
+    color: darkviolet;
+
+}
+
+.code-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.copy-btn {
+    background-color: #4a90e2;
+    /* Blue background for the button */
+    color: #ffffff;
+    /* White text color */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #357abd;
+    /* Darker blue on hover */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #4caf50;
+    /* Green background for success */
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.tooltip::before {
+    content: "📋";
+    /* Clipboard emoji */
+    margin-right: 8px;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .credit p {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-icon img {
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    opacity: 0.7;
+  }
+  

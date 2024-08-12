@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Installation</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s"
+    type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="myscripts.js" defer></script>
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>Tailwind CLI Installation Steps</h1>
+
+    <!-- Initialize your project -->
+    <div class="step">
+      <h2>Initialize your project:</h2>
+      <p>Run the following command to create a <code>package.json</code> file with default settings:</p>
+      <ol>
+        <li>
+          <code>npm init -y</code>
+          <button class="copy-btn" onclick="copyToClipboard('npm init -y', this)">Copy</button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Install Tailwind CSS -->
+    <div class="step">
+      <h2>Install Tailwind CSS:</h2>
+      <p>Run the following command to Install Tailwind CSS and its dependencies:</p>
+      <ol>
+        <li>
+          <code>npm install -D tailwindcss</code>
+          <button class="copy-btn" onclick="copyToClipboard('npm install -D tailwindcss', this)">Copy</button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Generate the Tailwind configuration file -->
+    <div class="step">
+      <h2>Generate the Tailwind configuration file:</h2>
+      <p>Run the command to create a <code>tailwind.config.js</code> file:</p>
+      <ol>
+        <li>
+          <code>npx tailwindcss init</code>
+          <button class="copy-btn" onclick="copyToClipboard('npx tailwindcss init', this)">Copy</button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Tailwind CSS Configuration -->
+    <div class="step">
+      <h2>Tailwind CSS Configuration:</h2>
+      <p>Copy the following code,Clear the previous codes and replace it into your
+        <code>tailwind.config.js</code>file:
+      </p>
+      <pre>
+      <code id="tailwind-config">
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+content: ["./src/**/*.{html,js}"],
+theme: {
+  extend: {},
+},
+plugins: [],
+}
+      </code>
+      <button class="copy-btn" id="copyTailwindConfig">Copy</button>
+    </pre>
+    </div>
+
+    <!-- Create your CSS file -->
+    <div class="step">
+      <h2>Create your CSS file:</h2>
+      <p>Create a file (e.g., <code>src/input.css</code>) and copy the following code and paste it into your
+        <code>src/input.css</code> file:
+      </p>
+      <pre>
+        <code>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+        </code>
+        <button class="copy-btn" onclick="copyToClipboard('@tailwind base;\n@tailwind components;\n@tailwind utilities;', this)">Copy</button>
+      </pre>
+    </div>
+
+    <!-- Build your CSS -->
+    <div class="step">
+      <h2>Build your CSS:</h2>
+      <p>Use the following command to build your CSS and watch for changes:</p>
+      <ol>
+        <li>
+          <code>npx tailwindcss -i ./src/input.css -o ./src/output.css --watch</code>
+          <button class="copy-btn"
+            onclick="copyToClipboard('npx tailwindcss -i ./src/input.css -o ./src/output.css --watch', this)">Copy</button>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Add the build script to package.json -->
+    <div class="step">
+      <h2>Add the build script to <code>package.json</code>:</h2>
+      <p>Replace the following script to your <code>package.json</code> to automate the build process:</p>
+      <pre>
+    <code>
+"scripts": {
+  "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+}
+    </code>
+    <button class="copy-btn" id="copyBuildScript">Copy</button>
+
+
+
+
+  </pre>
+    </div>
+
+
+
+    <!-- Create index.html file -->
+    <div class="step">
+      <h2>Create <code>index.html</code> file:</h2>
+      <p>Create an <code>index.html</code> file in your <code>src/index.html</code> directory and include the following
+        line to link your compiled CSS:</p>
+      <pre>
+        <code>
+&lt;link href="./output.css" rel="stylesheet"&gt;
+        </code>
+        <button class="copy-btn" onclick="copyToClipboard('&lt;link href=&quot;./output.css&quot; rel=&quot;stylesheet&quot;&gt;', this)">Copy</button>
+      </pre>
+    </div>
+
+
+    <!-- Run the build script -->
+    <div class="step">
+      <h2>Run the build script:</h2>
+      <p>Execute the following command to start the Tailwind CSS build process:</p>
+      <ol>
+        <li>
+          <code>npm run build:css</code>
+          <button class="copy-btn" onclick="copyToClipboard('npm run build:css', this)">Copy</button>
+        </li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <p><strong>Note ❗:</strong> All steps should be performed in the VS Code terminal.You must install Node.js to
+        install Tailwind CSS CLI. If Node.js is not installed, <a href="https://nodejs.org/" target="_blank">click here
+          to install Node.js</a>.</p>
+    </div>
+
+    <div class="warning">
+      <p><strong>Note ❗:</strong> After configuring all steps successfully, Tailwind CSS should be applied. If it does
+        not
+        work, run <code class="warning-note">npm run build:css</code>. Additionally,
+        when you <span class="highlight">restart VS Code or Close VS Code even if Kill the Terminal</span>, make sure to
+        run the <code class="warning-note">npm run build:css</code> once again to ensure everything works correctly.</p>
+    </div>
+    <!-- Credit -->
+    <div class="credit">
+      <p><i>MD NAJIB HOSSAIN</i></p>
+      <a href="https://github.com/NajibHossain49"
+        target="_blank" class="social-icon">
+        <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub" width="24"
+          height="24">
+      </a>
+      <a href="https://www.facebook.com/FireFly.Najib.Hossain" target="_blank" class="social-icon">
+        <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="Facebook"
+          width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/md-najib-hossain/" target="_blank" class="social-icon">
+        <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="LinkedIn" width="24"
+          height="24">
+      </a>
+    </div>
+
+  </div>
+</body>
+
+</html>
