@@ -1,0 +1,127 @@
+ <!-- Choose great locations -->
+        <section class="bg-cover bg-center py-12 bg-[#1C1C1C] text-white mt-16">
+
+
+            <div class="container mx-auto px-4 py-12">
+                <!-- First Part -->
+                <div class="flex flex-col lg:flex-row gap-16 lg:mb-24 sm:mb-12 sm:px-4 lg:pl-5">
+                    <!-- Left Side -->
+                    <div class="lg:w-1/2 sm:w-full">
+                        <h2 class="lg:text-4xl sm:text-2xl text-3xl font-bold lg:mb-6 sm:mb-4 w-5/6">
+                            We choose great locations to create modern living
+                        </h2>
+                        <p class="lg:text-xl sm:text-lg font-semibold lg:mb-3 sm:mb-2">About:</p>
+                        <p
+                            class="lg:mt-4 sm:mt-2 text-white lg:text-base sm:text-sm lg:leading-relaxed sm:leading-snug">
+                            We believe that where you live should enhance your life, which is why we meticulously choose
+                            locations that not only offer stunning surroundings but also access to essential services,
+                            entertainment, and transportation. Our modern living spaces are thoughtfully designed to
+                            balance style and functionality, ensuring that your home is a sanctuary that reflects your
+                            lifestyle. Whether you're seeking tranquility or the pulse of city life, our residences
+                            provide the perfect backdrop for you to thrive. Experience the harmony of modern design,
+                            convenient living, and a vibrant community—all in the heart of the most sought-after areas.
+                        </p>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="lg:w-1/2 sm:w-full lg:py-16 lg:px-20 sm:py-8 sm:px-4">
+                        <div class="pt-10">
+                            <h3 class="lg:text-2xl sm:text-xl text-xl font-bold lg:mb-5 sm:mb-3">Awards:</h3>
+                            <ul class="space-y-3 text-white underline underline-offset-4 sm:text-sm lg:text-base">
+                                <li><a href="#">Property Award 2018</a></li>
+                                <li><a href="#">MKEL / Liene Chihent</a></li>
+                                <li><a href="#">Director Club 22 Natur</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Second Part -->
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Left Side -->
+                    <div class="lg:w-1/2 pl-5">
+                        <img src="assets/a1-img-8.jpg" alt="Image description"
+                            class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <!-- Right Side -->
+                    <div class="lg:w-1/2 sm:w-full sm:pl-4 lg:pl-8">
+                        <h2 class="text-3xl font-bold mb-4 text-left">Materials</h2>
+                        <ul class="flex flex-wrap gap-4 text-white mb-4 underline underline-offset-4 text-left">
+                            <li><a href="#" class="hover:underline">Living room</a></li>
+                            <li><a href="#" class="hover:underline">Kitchen</a></li>
+                            <li><a href="#" class="hover:underline">Bathroom</a></li>
+                        </ul>
+                        <p class="text-white mb-6 sm:mb-4 sm:text-sm text-left w-full">Our homes blend style and
+                            functionality. The living
+                            room is spacious and inviting, the kitchen features modern appliances and sleek design, and
+                            the bathroom offers a luxurious, spa-like retreat. Each space is crafted to enhance your
+                            comfort and contemporary living.</p>
+
+                        <div
+                            class="grid lg:grid-cols-3 sm:grid-cols-1 gap-5 py-6 sm:gap-4 sm:py-4 justify-items-center  lg:mr-36">
+                            <div class="text-left sm:text-left">
+                                <img src="assets/a1-img-4-130x130.jpg" alt="Living room"
+                                    class="w-32 h-32 rounded-full shadow-md mx-auto">
+                                <p class="mt-2 text-white text-center">Oakwood floors</p>
+                            </div>
+                            <div class="text-left sm:text-left">
+                                <img src="assets/a1-img-5-130x130.jpg" alt="Kitchen"
+                                    class="w-32 h-32 rounded-full shadow-md mx-auto">
+                                <p class="mt-2 text-white text-center">Marble-silver</p>
+                            </div>
+                            <div class="text-left sm:text-left">
+                                <img src="assets/a1-img-6-130x130.jpg" alt="Bathroom"
+                                    class="w-32 h-32 rounded-full shadow-md mx-auto">
+                                <p class="mt-2 text-white text-center">Nude granite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Third Part -->
+                <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-5 pt-28">
+                    <!-- Image 1 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-2.jpg" alt="Living room"
+                            class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Skyscrapers
+                        </p>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-3.jpg" alt="Kitchen" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Urban center</p>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-4.jpg" alt="Bathroom" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Lux apartment</p>
+                    </div>
+                    <!-- Image 4 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-5.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Modern house</p>
+                    </div>
+                    <!-- Image 5 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-7.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Office</p>
+                    </div>
+                    <!-- Image 6 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-6.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Green house</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>

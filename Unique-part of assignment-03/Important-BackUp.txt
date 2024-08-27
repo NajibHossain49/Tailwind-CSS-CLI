@@ -1,0 +1,64 @@
+<!-- Navigation menu goes here -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                    <i
+                        class="ri-arrow-right-up-line bg-[#ABEF5F] text-2xl text-black p-3 rounded-full w-12 h-12 flex items-center justify-center"></i>
+
+
+                    <a class="btn btn-ghost text-2xl sm:text-3xl font-bold">Rinterio</a>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl font-[500]">
+                        <li class="hover:text-red-300 duration-300 easy-in-out"><a>Home</a></li>
+                        <li class="hover:text-red-300 duration-300 easy-in-out"><a>Services</a></li>
+                        <li class="hover:text-red-300 duration-300 easy-in-out"><a>Portfolio</a></li>
+                        <li class="hover:text-red-300 duration-300 easy-in-out"><a>Blogs</a></li>
+                        <li class="hover:text-red-300 duration-300 easy-in-out"><a>Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <!-- Container for right-aligned navbar items -->
+                <div class="navbar-end flex items-center space-x-6">
+                    <!-- Container for search icon with spacing -->
+                    <div class="flex items-center space-x-4">
+                        <!-- Remix Icon search icon -->
+                        <i class="ri-search-line bg-[#E9E9E9] text-2xl text-gray-800 p-3 rounded-full w-12 h-12 flex items-center justify-center"></i>
+
+                        <!-- Remix Icon shopping-cart icon -->
+                        <i
+                            class="ri-shopping-cart-2-line bg-[#E9E9E9] text-2xl text-gray-800 p-3 rounded-full w-12 h-12 flex items-center justify-center"></i>
+
+
+                    </div>
+
+                    <!-- Button for getting a ticket -->
+                    <button class="bg-[#ABEF5F] text-black font-bold text-lg py-2 px-6 rounded-full flex items-center space-x-2">
+                        <span>Get Ticket</span>
+                        <i class="ri-arrow-right-up-line text-2xl bg-black text-white p-2 rounded-full w-10 h-10 flex items-center justify-center"></i>
+                    </button>
+                    
+                    
+                    
+                </div>
+
+
+            </div>

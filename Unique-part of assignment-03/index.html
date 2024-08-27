@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en " data-theme="light">
+
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Rinterio</title>
+
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to DaisyUI CSS framework for component styling -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Link to Tailwind CSS CDN for utility-first CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to Google Fonts for Manrope font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Remix Icon CDN for icon fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind CSS configuration script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d', // Custom color added to Tailwind CSS
+                        'custom-yellow': '#F0BB40',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header section of the page -->
+    <header class="container mx-auto px-4">
+        <nav class="">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <!-- Left side: Arrow Icon and Logo Text -->
+                <div class="flex items-center space-x-4">
+                    <i
+                        class="ri-arrow-right-up-line bg-[#ABEF5F] text-xl sm:text-2xl text-black p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+                    <a href="#" class="text-3xl sm:text-4xl font-bold text-gray-800">Rinterio</a>
+                </div>
+
+                <!-- Middle: Nav Links (hidden on small screens) -->
+                <div class="hidden sm:flex flex-1 justify-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+                </div>
+
+                <!-- Right side: Icons and Button (hidden on small screens) -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <!-- Remix Icon search icon -->
+                    <i
+                        class="ri-search-line bg-[#E9E9E9] text-xl sm:text-2xl text-gray-800 p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+
+                    <!-- Remix Icon shopping-cart icon -->
+                    <i
+                        class="ri-shopping-cart-2-line bg-[#E9E9E9] text-xl sm:text-2xl text-gray-800 p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+
+                    <!-- Button with Icon -->
+                    <button
+                        class="bg-[#ABEF5F] text-black font-bold text-lg py-1 px-4 sm:px-6 rounded-full flex items-center space-x-2">
+                        <span>Book Consult</span>
+                        <i
+                            class="ri-arrow-right-up-line text-xl sm:text-2xl bg-black text-white p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i>
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu Icon (visible on small screens) -->
+                <div class="flex sm:hidden items-center">
+                    <button class="text-3xl text-gray-800">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default, shown when toggled) -->
+            <div id="mobile-menu" class="hidden sm:hidden flex-col space-y-4 p-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center min-h-screen  p-4">
+            <!-- Image -->
+            <img src="assets/banner.png" alt="Barn House" class="w-full max-w-md mb-6 rounded-lg ">
+
+            <!-- Heading -->
+            <h1 class="sm:w-full w-8/12 text-3xl lg:text-6xl font-extrabold text-center text-gray-800 mb-5">
+                A barn house of this design has a striking appearance
+            </h1>
+
+
+
+            <!-- Paragraph -->
+            <p class="w-4/6 lg:text-base md:text-xl text-center text-gray-600 mb-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+
+            <!-- Button -->
+            <button
+                class="w-full sm:w-auto bg-[#ABEF5F80] text-black font-bold text-lg py-2 px-4 sm:px-6 rounded-full flex items-center justify-center text-center space-x-2">
+                <span>View Details</span>
+                <i
+                    class="ri-arrow-right-up-line text-xl sm:text-2xl bg-[#ABEF5F] text-gray-700 p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i>
+            </button>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- Main content area -->
+    <main class="">
+
+        <!-- Main content goes here -->
+
+        <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-12 bg-gray-100">
+            <!-- Left-Side Content -->
+            <div class="w-full lg:w-1/2 flex flex-col items-start space-y-6">
+                <!-- Icon + "About Us" -->
+                <div
+                    class="flex items-center justify-center lg:justify-start space-x-3 lg:space-x-2 text-center lg:text-left">
+                    <img src="assets/Vector.png" alt="Icon" class="mb-14">
+                    <span
+                        class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-white px-2">
+                        <i class="ri-arrow-right-line mr-2"></i>About Us
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <div class="ml-0 lg:ml-16 text-center lg:text-left">
+                    <h1 class="text-3xl lg:text-5xl font-bold text-gray-800 py-2">
+                        We design thoughtful, liveable spaces
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p class="w-full lg:w-11/12 text-base text-gray-600 mx-auto lg:mx-0">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
+                    </p>
+                </div>
+
+                <!-- Two Divs with Icon, Caption, and Text -->
+                <div class="flex flex-col space-y-4 ml-0 lg:ml-16">
+                    <!-- First Div -->
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-lg">
+                        <img src="assets/commercial.png" alt="Icon" class="w-8 h-8">
+                        <div class="px-3">
+                            <h6 class="text-sm font-semibold text-gray-600">Commercial</h6>
+                            <p class="w-full lg:w-9/12 text-base text-gray-600">The barn house captivates with its blend
+                                of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
+
+                    <!-- Second Div -->
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-lg">
+                        <img src="assets/residential.png" alt="Icon" class="w-8 h-8">
+                        <div class="px-3">
+                            <h6 class="text-sm font-semibold text-gray-600">Residential</h6>
+                            <p class="w-full lg:w-9/12 text-base text-gray-600">The barn house captivates with its blend
+                                of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right-Side Image -->
+            <div class="w-full lg:w-5/12 mt-8 lg:mt-0 lg:mr-20">
+                <img src="assets/Rectangle.png" alt="About Us Image" class="w-full h-auto">
+            </div>
+        </section>
+
+        <!-- How we works -->
+
+        <section class="px-6 lg:px-20 py-12 bg-gray-100">
+            <!-- Title and Arrow -->
+            <div class="text-center mb-6">
+                <div
+                    class="flex items-center justify-center lg:justify-center space-x-3 lg:space-x-2 text-center lg:text-left">
+
+                    <span
+                        class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-white px-2">
+                        <i class="ri-arrow-right-line mr-2"></i>How we works
+                    </span>
+                </div>
+            </div>
+
+            <!-- Subheading and Description -->
+            <div class="text-center mb-8">
+                <h3 class="text-xl lg:text-4xl font-bold text-gray-800 mb-2">
+                    Our Works Process
+                </h3>
+                <p class="text-base lg:text-lg text-gray-600 lg:mt-2">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    <span class="lg:block lg:mt-2">featuring weathered wood, sleek metal accents.</span>
+                </p>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-[#E7C1D3] p-4 rounded-lg shadow-lg flex flex-col items-start">
+                    <img src="assets/concept.png" alt="Concept Icon" class="w-12 h-12 mb-4">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Concept</h4>
+                    <p class="text-base text-gray-600">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#EFDA6E] p-4 rounded-lg shadow-lg flex flex-col items-start">
+                    <img src="assets/flow-chart.png" alt="Design Icon" class="w-12 h-12 mb-4">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Design Process</h4>
+                    <p class="text-base text-gray-600">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#A4DAC3] p-4 rounded-lg shadow-lg flex flex-col items-start">
+                    <img src="assets/vision.png" alt="Build Icon" class="w-12 h-12 mb-4">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Supervision</h4>
+                    <p class="text-base text-gray-600">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#77AAEA] p-4 rounded-lg shadow-lg flex flex-col items-start">
+                    <img src="assets/budget-planning.png" alt="Deliver Icon" class="w-12 h-12 mb-4">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Budget Planning</h4>
+                    <p class="text-base text-gray-600">
+                        The barn house captivates with its blend of rustic charm and modern.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Latest Portfolio -->
+        <section class="px-6 lg:px-20 py-12 bg-gray-100">
+            <!-- Title and Arrow -->
+            <div class="text-center mb-6">
+                <div class="flex items-center justify-center space-x-3">
+                    <span
+                        class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-[#ABEF5F33] px-2">
+                        <i class="ri-arrow-right-line mr-2"></i>Explore our Latest works
+                    </span>
+                </div>
+            </div>
+
+            <!-- Subheading and Description -->
+            <div class="text-center mb-8">
+                <h3 class="text-xl lg:text-4xl font-bold text-gray-800 mb-2">
+                    Our Latest Portfolio
+                </h3>
+                <p class="text-base lg:text-lg text-gray-600 lg:mt-4">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    <span class="lg:block lg:mt-4">featuring weathered wood, sleek metal accents.</span>
+                </p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- First Row, Column 1 (spans across columns 1, 2, and 3) -->
+                <div
+                    class="col-span-1 lg:col-span-3 flex flex-col lg:flex-row items-start lg:items-center bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/img1.png" alt="Portfolio Image 1"
+                        class="w-full lg:w-1/3 h-auto mb-4 lg:mb-0 lg:mr-4 border-4 border-dashed">
+                    <div class="flex flex-col w-full lg:w-2/3 text-left">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Commercial</h4>
+                        <p class="text-base text-gray-600 mb-4">The barn house captivates with its blend of rustic charm
+                            and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                        <div class="flex items-center space-x-2 py-3">
+                            <span
+                                class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-white px-2">
+                                View Details
+                                <span
+                                    class="bg-[#ABEF5F] text-black w-6 h-6 rounded-full ml-2 flex items-center justify-center">
+                                    <i class="ri-arrow-right-up-line text-xs"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Row, Column 4 (single column) -->
+                <div
+                    class="col-span-1 lg:col-span-1 flex items-center justify-center bg-white p-4 rounded-lg shadow-lg border-gray-300">
+                    <img src="assets/img2.png" alt="Portfolio Image 2"
+                        class="w-full h-full object-cover rounded-lg border-4 border-dashed">
+                </div>
+
+
+                <!-- Second Row, Column 1 (single column) -->
+                <div
+                    class="col-span-1 lg:col-span-1 flex items-center justify-center bg-white p-4 rounded-lg shadow-lg border-gray-300">
+                    <img src="assets/img3.png" alt="Portfolio Image 2"
+                        class="w-full h-full object-cover rounded-lg border-4 border-dashed">
+                </div>
+
+                <!-- Second Row, Columns 2 and 3 (span together) -->
+                <div
+                    class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row items-start lg:items-center bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/img4.png" alt="Portfolio Image 4"
+                        class="w-full lg:w-2/3 h-auto mb-4 lg:mb-0 lg:mr-4 border-4 border-dashed">
+                    <div class="flex flex-col w-full lg:w-2/3 text-left">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Commercial</h4>
+                        <p class="text-base text-gray-600 mb-4">The barn house captivates with its blend of rustic charm
+                            and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+                        <div class="flex items-center space-x-2 py-3">
+                            <span
+                                class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-white px-2">
+                                View Details
+                                <span
+                                    class="bg-[#ABEF5F] text-black w-6 h-6 rounded-full ml-2 flex items-center justify-center">
+                                    <i class="ri-arrow-right-up-line text-xs"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Second Row, Column 4 (single column) -->
+                <div
+                    class="col-span-1 lg:col-span-1 flex items-center justify-center bg-white p-4 rounded-lg shadow-lg border-gray-300">
+                    <img src="assets/img5.png" alt="Portfolio Image 2"
+                        class="w-full h-full object-cover rounded-lg border-4 border-dashed">
+                </div>
+            </div>
+        </section>
+
+        <!-- Let’s Connect -->
+
+        <section class="relative bg-cover bg-center py-12 background-image">
+            <div class="relative z-10 container mx-auto px-6 lg:px-20">
+                <!-- Section Title -->
+                <!-- Title and Arrow -->
+                <div class="text-center mb-6">
+                    <div class="flex items-center justify-center space-x-3">
+                        <span
+                            class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-[#ABEF5F33] px-2">
+                            <i class="ri-arrow-right-line mr-2"></i>Let’s Connect
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Subheading and Description -->
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl lg:text-4xl font-bold text-gray-800 mb-2">
+                        Let’s Discuss Next<br class="sm:hidden"> Project
+                    </h3>
+
+                    <p class="text-base lg:text-lg text-gray-600 lg:mt-4">
+                        The barn house captivates with its blend of rustic charm and modern sophistication,
+                        <span class="lg:block lg:mt-4">featuring weathered wood, sleek metal accents.</span>
+                    </p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="max-w-[970px] mx-auto"> <!-- Using custom max-width class -->
+                    <form class="p-8 rounded-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- First Name -->
+                            <div>
+                                <input type="text" id="first-name" name="first-name" placeholder="First Name*"
+                                    class="w-full p-3  rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    required>
+                            </div>
+
+                            <!-- Last Name -->
+                            <div>
+                                <input type="text" id="last-name" name="last-name" placeholder="Last Name*"
+                                    class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- Phone Number -->
+                            <div>
+                                <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number*"
+                                    class="w-full p-3  rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    required>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email Number*"
+                                    class="w-full p-3  rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-6">
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message here"
+                                class="w-full p-3  rounded-3xl focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="flex items-center justify-center py-3">
+                            <button
+                                class="w-full bg-[#ABEF5F] text-black font-semibold py-2 px-4 rounded-3xl shadow-xl hover:bg-[#9DE04C] focus:outline-none focus:ring-2 focus:ring-[#8BCB45] flex items-center justify-center space-x-2">
+                                <span class="text-lg lg:text-xl">Send Mail</span>
+                                <span class="bg-black text-white w-8 h-8 rounded-full flex items-center justify-center">
+                                    <i class="ri-arrow-right-up-line text-lg"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ___________________________________________________________________________________________________________ -->
+
+        <!-- Choose great locations -->
+        <section class="bg-cover bg-center py-12 bg-[#EAF7F4] text-black mt-16">
+
+            <div class="container mx-auto px-4">
+
+                <!-- Caption -->
+                <div class="relative flex items-center justify-center mb-3">
+                    <!-- Center Section (Top Areas) -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2">
+                        <span
+                            class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-[#ABEF5F33] px-2">
+                            <i class="ri-arrow-right-line mr-2"></i>Top Areas
+                        </span>
+                    </div>
+
+                    <!-- Right Section (Explore More Button) -->
+                    <button
+                        class="absolute right-0 bg-[#ABEF5F] text-black font-bold text-lg py-2 px-4 sm:px-6 rounded-full items-center space-x-2 hidden sm:flex">
+                        <span>Explore More</span>
+                        <!-- Uncomment the icon if needed -->
+                        <!-- <i class="ri-arrow-right-up-line text-xl sm:text-2xl bg-black text-white p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i> -->
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- Heading -->
+                <div class="text-center lg:mb-6 sm:mb-4 sm:px-4">
+                    <h3 class="pt-3 lg:text-4xl sm:text-3xl text-xl font-semibold lg:mb-7 sm:mb-5">Find Your
+                        Neighborhood</h3>
+                </div>
+
+
+                <!-- Header Section -->
+                <div class="flex justify-between items-center ">
+                    <!-- <div>
+                            <p class="text-lg font-semibold mb-2">Top Areas</p>
+                            <h2 class="text-3xl font-bold">Find Your Neighborhood</h2>
+                    </div> -->
+                </div>
+
+
+                <!-- Third Part -->
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mt-6 ">
+                    <!-- Image 1 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-2.jpg" alt="Living room"
+                            class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Skyscrapers <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i>
+                        </p>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-3.jpg" alt="Kitchen" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Urban center <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i>
+                        </p>
+
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-4.jpg" alt="Bathroom" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Lux apartment <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i></p>
+                    </div>
+                    <!-- Image 4 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-5.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Modern house <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i></p>
+                    </div>
+                    <!-- Image 5 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-7.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Office <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i></p>
+                    </div>
+                    <!-- Image 6 (optional) -->
+                    <div class="relative">
+                        <img src="assets-2/p-list-img-6.jpg" alt="Example" class="w-full h-auto rounded-lg shadow-md">
+                        <p class="text-xl absolute bottom-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+                            Green house <i class="ri-arrow-right-up-line text-custom-yellow font-bold"></i></p>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Section (Explore More Button on Small Devices) -->
+                <button
+                    class="bg-[#ABEF5F] text-black font-bold text-lg py-2 px-4 sm:px-6 rounded-full flex items-center space-x-2 mt-6 mx-auto block lg:hidden">
+                    <span>Explore More</span>
+                    <!-- Uncomment the icon if needed -->
+                    <!-- <i class="ri-arrow-right-up-line text-xl sm:text-2xl bg-black text-white p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i> -->
+                </button>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Apartment Sketch -->
+
+
+        <section class="bg-[#D3D3D3] py-12">
+            <div class="container mx-auto px-4">
+                <!-- Caption -->
+                <div class="flex items-center justify-center space-x-3 mb-3">
+                    <span
+                        class="lg:text-base text-lg font-semibold flex items-center rounded-lg shadow-xl bg-[#ABEF5F33] px-2">
+                        <i class="ri-arrow-right-line mr-2"></i>Apartment Sketch
+                    </span>
+                </div>
+
+                <!-- Heading -->
+                <div class="text-center lg:mb-6 sm:mb-4 sm:px-4">
+                    <h3 class="lg:text-5xl sm:text-3xl text-4xl font-semibold lg:mb-7 sm:mb-5">Apartments Plan</h3>
+                </div>
+
+                <!-- Main Content -->
+                <div class="flex flex-col gap-8">
+                    <ul
+                        class="flex flex-wrap justify-center gap-4 text-gray-600 sm:text-sm lg:text-base sm:px-2 sm:space-y-2 lg:space-y-0 mt-4">
+                        <li><a href="#" class="hover:underline">The Studio</a></li>
+                        <li>
+                            <a href="#"
+                                class="lg:text-base sm:text-sm font-semibold flex items-center rounded-lg shadow-xl bg-[#ABEF5F33] px-2 hover:underline">
+                                Deluxe Portion
+                            </a>
+                        </li>
+                        <li><a href="#" class="hover:underline">Penthouse</a></li>
+                        <li><a href="#" class="hover:underline">Top Garden</a></li>
+                        <li><a href="#" class="hover:underline">Double Height</a></li>
+                    </ul>
+
+
+                    <!-- Flex Layout for Left and Right Side -->
+                    <div class="flex flex-col lg:flex-row gap-6 lg:pl-16 sm:px-4 sm:py-4">
+                        <!-- Left Side: Box with Text Content -->
+                        <div class="lg:w-1/2 bg-white p-5 sm:p-3 rounded-lg shadow-md lg:pl-8 sm:pl-4">
+                            <h2 class="lg:text-2xl sm:text-xl font-semibold lg:mb-3 sm:mb-2">Apartment Details</h2>
+                            <p class="lg:text-base sm:text-sm sm:mb-3 lg:mb-4">
+                                <span class="lg:text-lg sm:text-base font-semibold">Deluxe Portion Apartments
+                                    Plan</span><br>
+                                Experience elevated living with our Deluxe Portion Apartments Plan. Designed for those
+                                who appreciate the finer things in life, this plan offers spacious and elegant living
+                                areas, premium finishes, and modern amenities. Enjoy enhanced comfort and style in a
+                                layout crafted for sophistication and convenience. Perfect for individuals or families
+                                seeking a blend of luxury and practicality.
+                            </p>
+
+                            <!-- Additional Details -->
+                            <div class="space-y-1 sm:space-y-0.5 sm:text-xs lg:text-sm">
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">Total Area</span>
+                                    <span class="font-semibold">2800 Sq. Ft</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">Bedroom</span>
+                                    <span class="font-semibold">150 Sq. Ft</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">Bathroom</span>
+                                    <span class="font-semibold">45 Sq. Ft</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">Belcony/Pets</span>
+                                    <span class="font-semibold">Allowed</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">Lounge</span>
+                                    <span class="font-semibold">Included</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Apartment Sketch Images -->
+                        <div class=" lg:w-1/2 flex items-center justify-center lg:pr-10 sm:pr-4">
+                            <img src="assets-2/10.png" alt="Apartment Sketch"
+                                class="bg-gray-100 w-full h-auto max-w-sm rounded-lg shadow-md p-4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- end -->
+        <!-- ________________________________________________________________________________________________________________ -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#1C1C1C] text-[#737373] py-28 mt-4">
+        <div class="container mx-auto flex flex-col items-center text-center space-y-6">
+            <!-- Logo and Title -->
+            <div class="flex items-center space-x-4">
+                <i
+                    class="ri-arrow-right-up-line bg-[#ABEF5F] text-base sm:text-lg text-black p-1 sm:p-1.5 rounded-full w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center"></i>
+                <a href="#" class="text-2xl sm:text-3xl font-bold text-white">Rinterio</a>
+            </div>
+
+            <!-- Description -->
+            <p class="w-10/12 sm:w-8/12 lg:w-3/6 text-base lg:text-lg">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents.
+            </p>
+
+            <!-- Links -->
+            <div class="flex flex-col sm:flex-row sm:space-x-36 space-y-4 sm:space-y-0 py-4">
+                <a href="#" class="text-[#737373] hover:underline">Home</a>
+                <a href="#" class="text-[#737373] hover:underline">Services</a>
+                <a href="#" class="text-[#737373] hover:underline">Portfolio</a>
+                <a href="#" class="text-[#737373] hover:underline">Blogs</a>
+                <a href="#" class="text-[#737373] hover:underline">Contact Us</a>
+            </div>
+
+            <!-- Button Wrapper -->
+            <div class="px-20 sm:px-0 w-full sm:w-auto mx-auto">
+                <button
+                    class="w-full bg-[#ABEF5F] text-black font-bold text-lg py-1 px-4 sm:px-6 rounded-full flex items-center space-x-2 justify-center">
+                    <span>Book Consult</span>
+                    <i
+                        class="ri-arrow-right-up-line text-xl sm:text-2xl bg-black text-white p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
